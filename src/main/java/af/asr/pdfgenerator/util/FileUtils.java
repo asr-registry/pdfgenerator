@@ -90,10 +90,10 @@ public class FileUtils {
         try {
             return org.apache.commons.io.FileUtils.checksumCRC32(file);
         } catch (java.lang.NullPointerException e) {
-            throw new NullPointerException(FileUtilConstants.NULL_POINTER_ERROR_CODE.getErrorCode(),
+            throw new af.asr.pdfgenerator.exception.common.NullPointerException(FileUtilConstants.NULL_POINTER_ERROR_CODE.getErrorCode(),
                     FileUtilConstants.NULL_POINTER_ERROR_CODE.getMessage(), e.getCause());
         } catch (java.lang.IllegalArgumentException e) {
-            throw new IllegalArgumentException(FileUtilConstants.ILLEGAL_ARGUMENT_ERROR_CODE.getErrorCode(),
+            throw new af.asr.pdfgenerator.exception.common.IllegalArgumentException(FileUtilConstants.ILLEGAL_ARGUMENT_ERROR_CODE.getErrorCode(),
                     FileUtilConstants.ILLEGAL_ARGUMENT_ERROR_CODE.getMessage(), e.getCause());
         } catch (java.io.IOException e) {
             throw new IOException(FileUtilConstants.IO_ERROR_CODE.getErrorCode(),
@@ -113,7 +113,7 @@ public class FileUtils {
         try {
             org.apache.commons.io.FileUtils.cleanDirectory(directory);
         } catch (java.lang.IllegalArgumentException e) {
-            throw new IllegalArgumentException(FileUtilConstants.ILLEGAL_ARGUMENT_ERROR_CODE.getErrorCode(),
+            throw new af.asr.pdfgenerator.exception.common.IllegalArgumentException(FileUtilConstants.ILLEGAL_ARGUMENT_ERROR_CODE.getErrorCode(),
                     FileUtilConstants.ILLEGAL_ARGUMENT_ERROR_CODE.getMessage(), e.getCause());
         } catch (java.io.IOException e) {
             throw new IOException(FileUtilConstants.IO_ERROR_CODE.getErrorCode(),

@@ -23,6 +23,7 @@ import javax.imageio.ImageIO;
 import af.asr.pdfgenerator.core.PDFGeneratorImpl;
 import af.asr.pdfgenerator.exception.pdfgenerator.exception.PDFGeneratorException;
 import af.asr.pdfgenerator.exception.pdfgenerator.spi.PDFGenerator;
+import af.asr.pdfgenerator.util.FileUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
