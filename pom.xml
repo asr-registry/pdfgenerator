@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<itextcore.version>7.1.0</itextcore.version>
+		<itextcore.version>7.2.0</itextcore.version>
 		<itexthtml2pdf.version>2.0.0</itexthtml2pdf.version>
 		<itext.version>5.5.13</itext.version>
 		<bouncycastle.version>1.60</bouncycastle.version>
